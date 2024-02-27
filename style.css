@@ -64,11 +64,21 @@ body {
     src: url("assets/fonts/oswald-regularitalic-webfont.woff") format("opentype");
     
 }
+@font-face {
+    font-family: 'oswald-reg';
+    src: url("assets/fonts/oswald-regular-webfont.woff") format("opentype");
+    
+}
+@font-face {
+    font-family: 'oswald-light';
+    src: url("assets/fonts/oswald-light-webfont.woff") format("opentype");
+    
+}
  .container {
     width: 100%;
     max-width: 100%;
-    background-color: #93B1A6;
     margin: auto;
+    background-color: #393030;
 
 }
 .banner {
@@ -80,6 +90,7 @@ body {
     background-size:cover;
     width: 100%;
     height: 30rem;
+   padding-bottom: 0;
     
 }
 .logo img {
@@ -122,11 +133,61 @@ body {
 }
 
 .content {
-    
     background-color: #27282e;
     width: 100%;
     height: 100vh;
+    margin-top: 1rem;
+    
 }
+
+.social-bubbles {
+    display: flex;
+    width: 70%;
+    background-color: #010105;
+    height: fit-content;
+    padding: 0.5rem;
+    gap: 1rem;
+    border-radius: 20px;
+    justify-content: center;
+    margin: 1em auto 0 auto;
+}
+
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 17rem;
+    height: 6rem;
+    background-color: #090a12;
+    padding: 1rem;
+    border-radius: 20px;
+    align-items: center;
+}
+.card a {
+    display: block;
+    margin: 0.8rem;
+    font-family: 'oswald-reg';
+    text-decoration: none;
+    color: #c0d5d0;
+    font-size: 1.8em;
+}
+.card p {
+    display: block;
+    font-family: 'oswald-light';
+    color: #7d8a9d;
+    width: 50%;
+    
+}
+svg {
+    background-color: #111320;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+
+
+
+
      @media (max-width: 900px) {
     .container {
         width: 100%;
