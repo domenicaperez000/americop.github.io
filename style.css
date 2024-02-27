@@ -52,9 +52,7 @@ textarea {
                                      reset thingy^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 
-body {
-    
-}
+
 @font-face {
     font-family: 'oswald-stencil';
     src: url("assets/fonts/oswald-stencil-webfont.woff") format("opentype");
@@ -141,43 +139,52 @@ body {
 }
 
 .social-bubbles {
+    background-color: #000000;
+    width: fit-content;
+    box-shadow: #171b2c 4px 0px 10px;
+    margin: auto;
+    border-radius: 25px;
+    border: 1px solid #2f3237;
+}
+.cards {
     display: flex;
-    width: 70%;
-  background-color: #040508;
-    height: fit-content;
+    background-color: #10121e;
     padding: 0.5rem;
-    gap: 1rem;
-    border-radius: 20px;
-    justify-content: center;
-    margin: 1em auto 0 auto;
+    border-radius: 25px;
 }
-
-
-.card {
+.cards button {
     display: flex;
-    width: 13rem;
-    height: 2rem;
-    background-color: #090a12;
-    border-radius: 10px;
+    background-color: #080910;
+    padding: 0.8rem;
+    cursor: pointer;
+    border-radius: 20px;
+    border-style: none;
+    width: 12rem;
+    height: 3rem;
     align-items: center;
-    border: 1.5px solid #46494e;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
 }
-.card a {
-    display: block;
-    margin: 0.5rem;
+.cards button:hover {
+    background-color: #2e303f;
+    transition: 0.5s;
+}
+.cards button:active {
+    background-color: #898ca4;
+    transition: 0.3s;
+}
+button h1 {
+    color: #979a9f;
     font-family: 'oswald-reg';
-    text-decoration: none;
-    color: #c0d5d0;
     font-size: 1.4em;
-    align-self: first baseline;
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
+
 }
 
-svg {
-    background-color: #111320;
-    padding: 3.8px;
-    border-radius: 20px;
-    border: 1.5px solid #46494e;
-}
+
+
+
 
 
 
@@ -227,7 +234,7 @@ svg {
        width: 100%;
        height: fit-content;
        justify-content: center;
-       height: 60vh;
+       height: 70vh;
 
        
     }
@@ -244,19 +251,23 @@ svg {
         font-size: 3rem;
     }
     .text h3 {
+        display: block;
+        
         font-size: min(1.5rem);
+        
 
     
     }
-    
- } 
- @media (max-width: 660px) {
     .social-bubbles {
+        margin-top: 1rem;
+    }
+    .cards {
         flex-direction: column;
-        width: fit-content;
         
     }
-    .card {
-        margin:1rem;
+    .cards button {
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
     }
+    
  } 
