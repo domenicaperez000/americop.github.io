@@ -152,7 +152,7 @@ textarea {
     padding: 0.5rem;
     border-radius: 25px;
 }
-.cards button {
+.cards .button {
     display: flex;
     background-color: #080910;
     padding: 0.8rem;
@@ -160,25 +160,29 @@ textarea {
     border-radius: 20px;
     border-style: none;
     width: 12rem;
-    height: 3rem;
-    align-items: center;
+    height: 2rem;
     margin-right: 0.2rem;
     margin-left: 0.2rem;
+    
 }
-.cards button:hover {
+.cards .button:hover {
     background-color: #2e303f;
     transition: 0.5s;
 }
-.cards button:active {
+.cards .button:active {
     background-color: #898ca4;
     transition: 0.3s;
 }
-button h1 {
+.button a {
+    text-decoration: none;
     color: #979a9f;
     font-family: 'oswald-reg';
     font-size: 1.4em;
-    margin-left: 0.5rem;
-    margin-top: 0.3rem;
+    margin-top: 0.4rem;
+    margin-left: 0.4rem;
+    width: 100%;
+    height: 100%;
+ 
 
 }
 
